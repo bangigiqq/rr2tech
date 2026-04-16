@@ -4,26 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RR2 資訊科技有限公司 | IT · 弱電工程 · AI系統</title>
-  <meta name="description" content="RR2資訊科技有限公司 — 澳門IT工程、弱電工程、AI系統整合專家">
+  <meta name="description" content="RR2資訊科技有限公司 — 澳門IT工程、弱電工程、AI系統整合專家。專業技術團隊，一站式解決方案。">
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="nav">
+<nav class="nav" id="nav">
   <div class="nav-inner">
     <div class="nav-logo">
       <img src="assets/RR2_Logo_white.png" alt="RR2">
+      RR2
     </div>
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="#about">關於我們</a>
       <a href="#services">服務項目</a>
       <a href="#contact">聯絡我們</a>
+      <a href="#contact" class="nav-cta">立即咨詢</a>
     </div>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -31,41 +33,94 @@
 
 <!-- Hero -->
 <section class="hero">
-  <div class="hero-diagonal"></div>
-  <div class="hero-line"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-diagonal-1"></div>
+  <div class="hero-diagonal-2"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-line-accent"></div>
+  <div class="hero-line-accent-2"></div>
+
   <div class="hero-content">
-    <img class="hero-logo" src="assets/RR2_Logo_white.png" alt="RR2 Logo">
-    <h1>RR2 資訊科技有限公司</h1>
-    <p class="hero-en">RR2 INFORMATION TECHNOLOGY</p>
-    <p class="hero-tagline">智能基建 · 專業工程 · 驅動未來</p>
-    <a href="#services" class="btn-primary">了解我們的服務</a>
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        澳門專業 IT 解決方案
+      </div>
+      <img class="hero-logo" src="assets/RR2_Logo_white.png" alt="RR2 Logo">
+      <h1>RR2 資訊科技<br><span>有限公司</span></h1>
+      <p class="hero-en">RR2 INFORMATION TECHNOLOGY CO., LTD.</p>
+      <p class="hero-desc">專業提供 IT 基礎建設、弱電系統工程及 AI 智能整合方案。從規劃到實施，为您打造全方位的數碼轉型解決方案。</p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">探索服務 →</a>
+        <a href="#contact" class="btn-outline">聯絡我們</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-stat-card">
+        <div class="hero-stat-label">核心服務</div>
+        <div class="hero-stat-value">IT 工程</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hero-stat-label">專業範疇</div>
+        <div class="hero-stat-value">弱電系統</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hero-stat-label">創新技術</div>
+        <div class="hero-stat-value">AI 人工智能</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>SCROLL</span>
+    <div class="hero-scroll-line"></div>
   </div>
 </section>
 
 <!-- About -->
-<section id="about" class="section section-white">
+<section id="about" class="section section-gray">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">ABOUT US</span>
-      <h2>關於我們</h2>
+      <h2 class="section-title">關於我們</h2>
+      <div class="section-divider"></div>
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>RR2 資訊科技有限公司扎根澳門，專注於<span class="highlight">IT基礎建設</span>、<span class="highlight">弱電系統工程</span>及<span class="highlight">AI智能系統整合</span>。我們以專業技術團隊為客戶提供由規劃、設計到實施的一站式解決方案。</p>
+        <p>RR2 資訊科技有限公司扎根澳門，專注於 <span class="highlight">IT 基礎建設</span>、<span class="highlight">弱電系統工程</span>及 <span class="highlight">AI 智能系統整合</span>。我們擁有專業技術團隊，為客戶提供由規劃、設計到實施的一站式解決方案。</p>
         <p>從企業網絡架構、監控安防系統，到人工智能應用部署，RR2 致力為每一位客戶打造最適合的技術方案，以可靠品質與創新思維推動業務數碼轉型。</p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">🔧</div>
+            <div class="about-feature-text">專業技術團隊</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🛡️</div>
+            <div class="about-feature-text">資訊安全保障</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🤖</div>
+            <div class="about-feature-text">AI 智能整合</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">⚡</div>
+            <div class="about-feature-text">快速響應服務</div>
+          </div>
+        </div>
       </div>
-      <div class="about-stats">
-        <div class="stat">
-          <span class="stat-number">IT</span>
-          <span class="stat-label">基礎建設專家</span>
+
+      <div class="about-visual">
+        <div class="about-img-placeholder">
+          <img src="assets/RR2_Logo_white.png" alt="RR2">
+          <span>RR2 INFORMATION TECHNOLOGY</span>
         </div>
-        <div class="stat">
-          <span class="stat-number">弱電</span>
-          <span class="stat-label">系統工程</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">AI</span>
-          <span class="stat-label">智能整合</span>
+        <div class="about-img-overlay">
+          <div class="about-img-stat">
+            <strong>一站式</strong>
+            IT · 弱電 · AI 解決方案
+          </div>
         </div>
       </div>
     </div>
@@ -73,16 +128,17 @@
 </section>
 
 <!-- Services -->
-<section id="services" class="section section-blue">
+<section id="services" class="section section-dark">
   <div class="container">
-    <div class="section-header section-header-light">
+    <div class="section-header" style="text-align:center;">
       <span class="section-tag">SERVICES</span>
-      <h2>服務項目</h2>
+      <h2 class="section-title section-title-light">服務項目</h2>
+      <div class="section-divider" style="margin:16px auto 0;"></div>
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">🖥️</div>
-        <h3>IT工程</h3>
+        <div class="service-icon-wrap">🖥️</div>
+        <h3>IT 工程</h3>
         <ul>
           <li>企業網絡架構設計</li>
           <li>伺服器部署與維護</li>
@@ -92,7 +148,7 @@
         </ul>
       </div>
       <div class="service-card">
-        <div class="service-icon">🔌</div>
+        <div class="service-icon-wrap">🔌</div>
         <h3>弱電工程</h3>
         <ul>
           <li>綜合佈線系統</li>
@@ -103,8 +159,8 @@
         </ul>
       </div>
       <div class="service-card">
-        <div class="service-icon">🤖</div>
-        <h3>AI系統</h3>
+        <div class="service-icon-wrap">🤖</div>
+        <h3>AI 系統</h3>
         <ul>
           <li>AI 流程自動化</li>
           <li>智能客服機器人</li>
@@ -117,30 +173,40 @@
   </div>
 </section>
 
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>需要專業 IT 方案？</h2>
+    <p>立即聯絡 RR2，獲得免費初步評估</p>
+    <a href="#contact" class="btn-white">開始咨詢 →</a>
+  </div>
+</section>
+
 <!-- Contact -->
 <section id="contact" class="section section-white">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" style="text-align:center;">
       <span class="section-tag">CONTACT</span>
-      <h2>聯絡我們</h2>
+      <h2 class="section-title">聯絡我們</h2>
+      <div class="section-divider" style="margin:16px auto 0;"></div>
     </div>
     <div class="contact-grid">
       <div class="contact-card">
-        <div class="contact-icon">📞</div>
+        <div class="contact-icon-wrap">📞</div>
         <div>
           <h4>電話</h4>
           <p>+853 6233 1823</p>
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-icon">✉️</div>
+        <div class="contact-icon-wrap">✉️</div>
         <div>
           <h4>電郵</h4>
           <p>INFO@RR2INFO.COM</p>
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-icon">📍</div>
+        <div class="contact-icon-wrap">📍</div>
         <div>
           <h4>地址</h4>
           <p>澳門激成工業大廈三期5樓W/A窒</p>
@@ -156,24 +222,40 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <img src="assets/RR2_Logo_white.png" alt="RR2" class="footer-logo">
-        <span>RR2 資訊科技有限公司</span>
+        RR2 資訊科技有限公司
       </div>
-      <div class="footer-copy">© 2026 RR2 Information Technology. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#about">關於我們</a>
+        <a href="#services">服務項目</a>
+        <a href="#contact">聯絡我們</a>
+      </div>
     </div>
+    <div class="footer-copy">© 2026 RR2 Information Technology Co., Ltd. All rights reserved.</div>
   </div>
 </footer>
 
 <script>
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
-    document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('navLinks').classList.remove('open');
   });
 });
-// Nav shrink on scroll
+
 window.addEventListener('scroll', () => {
-  document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Scroll animation
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.section-header, .service-card, .contact-card, .hero-stat-card').forEach(el => {
+  el.classList.add('fade-up');
+  observer.observe(el);
 });
 </script>
 </body>
