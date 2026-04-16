@@ -11,7 +11,19 @@
 </head>
 <body>
 
-<!-- Background -->
+<!-- Background (outside page-wrap so they sit behind everything) -->
+<div class="bg-layer bg-base"></div>
+<div class="bg-layer bg-grid"></div>
+<div class="bg-circuit">
+  <div class="circuit-line"></div>
+  <div class="circuit-line"></div>
+  <div class="circuit-line"></div>
+  <div class="circuit-line"></div>
+  <div class="circuit-line"></div>
+  <div class="circuit-line"></div>
+</div>
+
+<div class="page-wrap">
 <div class="bg-layer bg-base"></div>
 <div class="bg-layer bg-grid"></div>
 <div class="bg-circuit">
@@ -229,6 +241,7 @@
     <div class="footer-copy">© 2026 RR2 Information Technology Co., Ltd. All rights reserved.</div>
   </div>
 </footer>
+</div><!-- /.page-wrap -->
 
 <script>
 // Nav scroll
